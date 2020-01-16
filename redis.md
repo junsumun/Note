@@ -109,6 +109,8 @@ $ LPUSH people "Tom" // adds "Tom" to the left ex. Tom - Jen - Brad.
 $ RPUSH people "Harry" // adds "Harry" to the right ex. Tom - Jen - Brad - Harry.
 ```
 
+### **LIST TYPE**
+
 **LPOP**
 ```
 $ LPOP people // removes an element from the left side of the list. "Tom" -> returns the removed element
@@ -119,6 +121,12 @@ $ LRANGE people 0 -1 // Jen - Brad - Harry
 ```
 $ RPOP people // removes an element from the right side of the list. "Harry" -> returns the remove element
 $ LRANGE people 0 -1 // Jen - Brad
+```
+
+**LINSERT**
+```
+$ LRANGE people 0 -1 // Jen - Brad
+$ LINSERT people BEFORE Brad "Junsu" // inserts new "Junus" value before the Brad value to people list.
 ```
 
 **LRANGE**
