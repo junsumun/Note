@@ -29,3 +29,7 @@ $ docker run -p 6379:6379 --name redis -d redis
 $ docker run -it --link redis:redis --rm redis redis-cli -h redis -p 6379
 ```
 -rm: deletes a container when the container gets exited
+
+```
+$ docker exec -it redis redis-cli
+```
