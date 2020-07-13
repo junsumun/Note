@@ -41,9 +41,19 @@
 2. Run the dynamodb-admin by run the following command-line.
    ```shell
    # For Windows
-   $ export DYNAMO_ENDPOINT=http://localhost:8000 dynamodb-admin
+   $ export DYNAMO_ENDPOINT=http://localhost:8000
+   $ dynamodb-admin
    ```
    ```shell
    # For Mac/Linux
-   $ DYNAMO_ENDPOINT=http://localhost:8000 dynamodb-admin
+   $ DYNAMO_ENDPOINT=http://localhost:8000
+   $ dynamodb-admin
+   ```
+
+### AWS Credential Set up
+1. Install [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-windows.html).
+
+2. Create AWS Credential by run the following command-line.
+   ```shell
+   $ aws configure
    ```
