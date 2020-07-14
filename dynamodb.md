@@ -41,12 +41,12 @@
 2. Run the dynamodb-admin by run the following command-line.
    ```shell
    # For Windows
-   $ export DYNAMO_ENDPOINT=http://localhost:8000
+   $ set DYNAMO_ENDPOINT=http://localhost:8000
    $ dynamodb-admin
    ```
    ```shell
    # For Mac/Linux
-   $ DYNAMO_ENDPOINT=http://localhost:8000
+   $ export DYNAMO_ENDPOINT=http://localhost:8000
    $ dynamodb-admin
    ```
 
