@@ -3,11 +3,11 @@
 ## TypeScript Set up (Node)
 
 ## Installing TypeScript Dependencies
-1. Install typescript by running a command below.
+1. Install [typescript](https://www.npmjs.com/package/typescript) by running a command below.
    ```shell
    $ npm install typescript --save--dev
    ```
-2. **(Optional But Recommended)** Install eslint by running a command below.
+2. **(Optional But Recommended)** Install [eslint](https://eslint.org/) by running a command below.
    ```shell
    $ npm install eslint --save--dev
    ```
@@ -34,3 +34,4 @@
      "lib": ["es2015"]
    }
    ```
+4. Install [@type/express]()
