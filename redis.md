@@ -1,5 +1,22 @@
 # Redis note
 
+**docker-compose.yml example**
+
+```yml
+version: "3.8"
+services:
+  redis:
+    container_name: wai-redis-local
+    image: "redis:latest"
+    ports:
+      - 6379:6379
+    volumes:
+      - ./config/redis.conf:/redis.conf
+    command: [ "redis-server", "/redis.conf" ]
+    expose:
+      - "6379"
+```
+
 **GET and SET**
 ```
 $ SET foo 100 // sets foo to 100
