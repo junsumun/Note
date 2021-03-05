@@ -8,7 +8,11 @@
   $ npm init #if package.json is not already in the project
   $ npm install --save firebase
   ```
-
+2. In a js file, import firebase module.
+  ```javascript
+  import firebase from 'firebase/app';
+  
+  ```
 ## Firebase Authentication
 
 
