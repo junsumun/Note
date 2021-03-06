@@ -11,7 +11,7 @@
 2. In a js file, import firebase module.
   ```javascript
   import firebase from 'firebase/app';
-  
+  import auth from 'firebase/auth';
   ```
 ## Firebase Authentication
 
