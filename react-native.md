@@ -1,7 +1,7 @@
 # React Native
 
 ## Table of Contents
-1. Placeholder
+1. [Basic Setup](#basic-setup)
 2. [Troubleshooting](#troubleshooting)
     * [Build Errors](#build-errors)
         * [Target Support Files Pods error](#target-support-files-pods-error)
@@ -12,6 +12,11 @@
 Open a different IOS simulator 
 ```
 $ shift + i
+```
+## Basic Setup
+### Creating a new Project
+```bash
+npx react-native init <project name>
 ```
 
 ## Troubleshooting
