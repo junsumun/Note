@@ -4,7 +4,7 @@
 1. Placeholder
 2. [Troubleshooting](#troubleshooting)
     * [Build Errors](#build-errors)
-        * Test
+        * [Target Support Files Pods error](#Target Support Files Pods error)
 
 
 ## Expo CLI
@@ -16,3 +16,4 @@ $ shift + i
 
 ## Troubleshooting
 ### Build Errors
+#### Target Support Files Pods error
