@@ -4,7 +4,7 @@
 1. Placeholder
 2. [Troubleshooting](#troubleshooting)
     * [Build Errors](#build-errors)
-        * [Target Support Files Pods error](#Target Support Files Pods error)
+        * [Target Support Files Pods error](#target-support-files-pods-error)
 
 
 ## Expo CLI
