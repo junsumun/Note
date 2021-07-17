@@ -1,7 +1,7 @@
 # Note :memo:
 
 I don't want to waste my time learning same thing over and over <br/>
-but also my :brain: capacity is not big enough to memorize all. <br/>
+but my :brain: capacity is not big enough to memorize all. <br/>
 Therefore, I write down things on here.
 
 ## Table of Contents
