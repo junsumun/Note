@@ -2,6 +2,8 @@
 
 ## Table of Contents
 1. [Basic Setup](#basic-setup)
+   * [Creating a new project](#creating-a-new-project) 
+   * [Use .env file in React Native](#use-env-file-in-react-native)
 2. [Troubleshooting](#troubleshooting)
     * [Build Errors](#build-errors)
         * [Target Support Files Pods error](#target-support-files-pods-error)
@@ -18,6 +20,8 @@ $ shift + i
 ```bash
 npx react-native init <project name>
 ```
+
+### Use \.env file in React Native
 
 ## Troubleshooting
 
