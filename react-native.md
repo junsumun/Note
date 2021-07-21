@@ -24,7 +24,7 @@ npx react-native init <project name>
 ### Use \.env file in React Native
 Using a .env file allows a project to exclude configuration information from the codebase. 
 
-1. Create .env file in the root directory of a project
+1. Create **.env** file in the root directory of a project
 2. Save the configuration information inside the .env file
     ```bash
     # .env
@@ -37,11 +37,11 @@ Using a .env file allows a project to exclude configuration information from the
     APP_ID=xxxx
     MEASUREMENT_ID=xxxx
     ```
-3. Install react-native-dotenv pacakge
+3. Install **react-native-dotenv** pacakge
     ```
     $ npm install react-native-dotenv
     ```
-4. Create .babelrc file in the root directory of a project
+4. Create **.babelrc** file in the root directory of a project
 5. Include the react-native-dotenv package as a babel plugin
    ```json
    {
