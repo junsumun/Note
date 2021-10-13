@@ -13,3 +13,13 @@ Remove a file after pushed to a remote repository
   git commit -m "<commit message>"
   git push origin <branch name>
 ```
+
+Delete branch
+```bash
+  # delete remote branch
+  git push -d <remote repo> <branch name>
+  
+  # delete local branch
+  git branch -d <branch name>
+```
+
