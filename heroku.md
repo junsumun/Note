@@ -33,7 +33,54 @@
   ```
   heroku open
   ```
-  
+
+### Use GitLab CI and Heroku
+  1. Set up GitLab CI runner
+  2. Add Heroku variables
+    Settings -> CI/CD -> Expand Variables -> Add variables
+    
+    eg. HEROKU_API_KEY, HEROKU_APP_PRODUCTION
+  3. Create .gitlab-ci.yml file
+  ```yaml
+  # template
+  image: node:latest
+
+  before_script:
+    - apt-get update -qy
+    - apt-get install -y ruby-dev
+    - gem install dpl
+
+  stages:
+    - build
+    - test
+    - deploy
+
+  build:
+    stage: build
+    script:
+      - echo "application will be build"
+
+  unit-test:
+    stage: test
+    script:
+      - echo "unit test will be added" 
+
+  stage:
+    stage: deploy
+    image: ruby:latest
+    script:
+      - dpl --provider=heroku --app=$HEROKU_APP_STAGING --api-key=$HEROKU_API_KEY
+    only:
+      - stage
+
+  prod:
+    stage: deploy
+    image: ruby:latest
+    script:
+      - dpl --provider=heroku --app=$HEROKU_APP_PRODUCTION --api-key=$HEROKU_API_KEY
+    only:
+      - main
+  ```
 ## Issues
 
 Application deployed to Heroku is not accessible.
