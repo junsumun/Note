@@ -1,8 +1,8 @@
 # Docker Note
 
-**To list containers**
+**To list all containers**
 ```
-$ docker ps 
+$ docker ps
 ```
 -a: To list all running and stopped containers
 
@@ -14,6 +14,11 @@ $ docker stop <CONTAINER ID>
 **To remove one or more containers**
 ```
 $ docker rm <CONTAINER ID>
+```
+
+**To remove all stopped containers**
+```
+$ docker system prune
 ```
 
 **To create a new container**
