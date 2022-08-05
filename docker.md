@@ -1,10 +1,30 @@
 # Docker Note
 
+**To create a container**
+```
+$ docker create <image name>
+```
+
+**To start a container**
+```
+$ docker start <container id>
+
+options:
+-a: Displays logs of the container
+```
+
+**A combined command of create and start**
+```
+$ docker run <image name>
+```
+
 **To list all containers**
 ```
 $ docker ps
-```
+
+options:
 -a: To list all running and stopped containers
+```
 
 **To stop a container**
 ```
@@ -21,20 +41,31 @@ $ docker rm <CONTAINER ID>
 $ docker system prune
 ```
 
-**To create a new container**
+**To check logs of a container**
 ```
-$ docker run -p 6379:6379 --name redis -d redis
+$ docker logs <container id>
 ```
--p: Allows a public access to the port
--d: runs in the background
-[run command detail](https://docs.docker.com/engine/reference/commandline/run/)
 
-**To access to a redis-cli**
+**To stop a running container**
 ```
-$ docker run -it --link redis:redis --rm redis redis-cli -h redis -p 6379
-```
--rm: deletes a container when the container gets exited
+$ docker stop <container id>
 
+note: docker kill <container id> command will be executed automatically after 10 seconds the docker stop command executed.
 ```
-$ docker exec -it redis redis-cli
+
+**Executing Commands in a Running Container**
 ```
+First, start a main container ex. redis
+
+$ docker run redis
+
+this command will start a redis-server container and to execute commands inside this redis-server container
+
+$ docker exec -it <container id> <command>
+
+ex. docker exec -it redis-server-container-id redis-cli
+
+options:
+-it: allows us to provide input to the container
+```
+
